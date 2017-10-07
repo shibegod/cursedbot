@@ -90,7 +90,7 @@ if (command === "embed") {
          timestamp: new Date(),
          footer: {
              text: bot.user.username,
-             icon_url: bot.user.avatar.,
+             icon_url: bot.user.avatar,
          }}})};
 
 
