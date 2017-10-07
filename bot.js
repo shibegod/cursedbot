@@ -37,10 +37,10 @@ bot.on("guildCreate", guild => {
 
 bot.on("presenceUpdate", (oldMember, newMember) => {
     let guild = newMember.guild;
-    let playRole = guild.roles.find("name", "Playing Minecraft");
+    let playRole = guild.roles.find("name", "Playing Overwatch");
     if(!playRole) return;
 
-    if(newMember.user.presence.game && newMember.user.presence.game.name === "Minecraft") {
+    if(newMember.user.presence.game && newMember.user.presence.game.name === "Overwatch") {
         newMember.addRole(playRole);
    }   else if(!newMember.user.presence.game && newMember.roles.has(playRole.id)) {
     newMember.removeRole(playRole);
@@ -404,6 +404,10 @@ if (command === "cmds") {
   if (message.content.startsWith(prefix + "ban")) {
       let author = message.author
     let member = message.mentions.members.first();
+    if (!member) {
+        message.channel.send('Ban who?')
+        return;
+    }
     let reason = args.slice(1).join(" ");
     if (message.member.hasPermission("BAN_MEMBERS")) {
         message.channel.sendMessage("klol bye peasant")
@@ -416,9 +420,10 @@ if (message.content.startsWith(prefix + "setgame")) {
     if (message.author.id == "251938340671062036") {
         let argsresult = args.join(' ')
         bot.user.setGame(argsresult)
-        message.channel.send('game has been set')
+        message.channel.send('The game has been set!')
     }
 }
+
 
   if (message.content.startsWith(prefix + "unban")) {
       let author = message.author
@@ -470,5 +475,4 @@ console.log(`8ball by ${author} or ${author.username} ` + message)
 
 
 
-   
 bot.login(process.env.BOT_TOKEN); 
