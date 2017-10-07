@@ -82,7 +82,7 @@ if (command === "embed") {
          color: 000000,
          author: {
              name: message.author.tag,
-             icon_url: message.author.avatarURL
+             icon_url: message.author.avatar
          },
          title: 'Say',
          description: `${msg}`,
@@ -90,7 +90,7 @@ if (command === "embed") {
          timestamp: new Date(),
          footer: {
              text: bot.user.username,
-             icon_url: bot.user.avatar.URL,
+             icon_url: bot.user.avatar.,
          }}})};
 
 
@@ -107,7 +107,7 @@ if (command === "embed") {
                     color:00000,
                     author: {
                         name: message.author.tag,
-                        icon_url: message.author.avatarURL
+                        icon_url: message.author.avatar
                     },
                     title: 'Support',
                     description: `${msg}`,
@@ -115,7 +115,7 @@ if (command === "embed") {
                     timestamp: new Date(),
                     footer: {
                         text: bot.user.username,
-                        icon_url: bot.user.avatar.URL,
+                        icon_url: bot.user.avatar.
                     }}})};
 
 
@@ -150,7 +150,7 @@ if (command === "embed") {
                  color: color,
                  author: {
                      name: message.author.tag,
-                     icon_url: message.author.avatarURL
+                     icon_url: message.author.avatar
                  },
                  title: 'Say',
                  description: `${msg}`,
@@ -158,7 +158,7 @@ if (command === "embed") {
                  timestamp: new Date(),
                  footer: {
                      text: bot.user.username,
-                     icon_url: bot.user.avatar.URL,
+                     icon_url: bot.user.avatar,
                  }}})};
 
 
@@ -261,7 +261,7 @@ if (command === "mute") {
              color: 000000,
              author: {
                  name: message.author.tag,
-                 icon_url: message.author.avatarURL
+                 icon_url: message.author.avatar
              },
              
              title: 'Muted, bitch',
@@ -271,7 +271,7 @@ if (command === "mute") {
              timestamp: new Date(),
              footer: {
                  text: bot.user.username,
-                 icon_url: bot.user.avatar.URL,
+                 icon_url: bot.user.avatar,
                  
             
       }}})};
@@ -306,7 +306,7 @@ if (command === "unmute") {
              color: 000000,
              author: {
                  name: message.author.tag,
-                 icon_url: message.author.avatarURL
+                 icon_url: message.author.avatar
              },
              
              title: 'Unmuted',
@@ -316,7 +316,7 @@ if (command === "unmute") {
              timestamp: new Date(),
              footer: {
                  text: bot.user.username,
-                 icon_url: bot.user.avatar.URL,
+                 icon_url: bot.user.avatar,
                  
             
       }}})};
@@ -345,7 +345,7 @@ if (command === "L") {
          color: 000000,
          author: {
              name: message.author.tag,
-             icon_url: message.author.avatarURL
+             icon_url: message.author.avatar
          },
          
          title: 'Hand L',
@@ -355,7 +355,7 @@ if (command === "L") {
          timestamp: new Date(),
          footer: {
              text: bot.user.username,
-             icon_url: bot.user.avatar.URL,
+             icon_url: bot.user.avatar,
              
         
   }}}
