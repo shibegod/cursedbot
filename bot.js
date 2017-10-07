@@ -35,6 +35,10 @@ bot.on("guildCreate", guild => {
     console.log(`New guild added : ${guild.name}, owned by ${guild.owner.user.username}`);
 });
 
+bot.on('guildMemberAdd',  (member) => {
+    member.guild.channels.get("363514912531677197").send("Welcome to cursed! Hope you have fun! " + member);
+    });
+
 bot.on("presenceUpdate", (oldMember, newMember) => {
     let guild = newMember.guild;
     let playRole = guild.roles.find("name", "Playing Overwatch");
