@@ -1,0 +1,2 @@
+# cursedbot
+hecc yea
